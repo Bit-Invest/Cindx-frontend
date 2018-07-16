@@ -1,0 +1,39 @@
+@import "src/components/common/Utils/Utils.scss";
+
+.textarea {
+  width: 100%;
+  height: 100%;
+
+  &__textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: solid 2px #dddddd;
+    @include font(Lato-Light);
+    font-size: 18px;
+    padding: 10px 14px;
+    color: #000;
+    outline: none;
+
+    &::-webkit-textarea-placeholder {
+      @include font(Lato-Light);
+      color: #666666;
+    }
+
+    &::-moz-placeholder {
+      @include font(Lato-Light);
+      color: #666666;
+    }
+
+    &:-ms-textarea-placeholder {
+      @include font(Lato-Light);
+      color: #666666;
+    }
+
+    &:-moz-placeholder {
+      @include font(Lato-Light);
+      color: #666666;
+    }
+  }
+}

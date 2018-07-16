@@ -1,0 +1,58 @@
+@import "../../common/Utils/Utils.scss";
+
+.list-products {
+  padding: 0 30px;
+  &__news {
+    background-image: url(../assets/images/news.png);
+    background-size: 100%;
+    width: 894px;
+    height: 260px;
+    margin: 50px 30px;
+  }
+  &__caption {
+    @include font(Lato);
+    font-size: 34px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  &__help {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #cccccc;
+    text-decoration: underline;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  &__button-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__list-title {
+    margin: 50px auto 0 auto;
+    @include font(Lato-Bold);
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+}
+.list-products__help:hover {
+  color: rgb(133, 96, 253);
+}

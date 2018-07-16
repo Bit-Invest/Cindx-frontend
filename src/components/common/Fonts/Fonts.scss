@@ -1,0 +1,17 @@
+@import "../Utils/Utils.scss";
+
+@include fonts('Lato', 'Lato/Lato-Regular.ttf');
+@include fonts('Lato-Black', 'Lato/Lato-Black.ttf');
+@include fonts('Lato-BlackItalic', 'Lato/Lato-BlackItalic.ttf');
+@include fonts('Lato-Bold', 'Lato/Lato-Bold.ttf');
+@include fonts('Lato-BoldItalic', 'Lato/Lato-BoldItalic.ttf');
+@include fonts('Lato-Hairline', 'Lato/Lato-Hairline.ttf');
+@include fonts('Lato-Italic', 'Lato/Lato-Italic.ttf');
+@include fonts('Lato-Light', 'Lato/Lato-Light.ttf');
+@include fonts('Lato-LightItalic', 'Lato/Lato-LightItalic.ttf');
+@include fonts('Geometria', 'Geometria/Geometria.otf');
+@include fonts('Geometria-Bold', 'Geometria/Geometria-Bold.otf');
+@include fonts('Geometria-BoldItalic', 'Geometria/Geometria-BoldItalic.otf');
+@include fonts('Geometria-Italic', 'Geometria/Geometria-Italic.otf');
+@include fonts('Geometria-Light', 'Geometria/Geometria-Light.otf');
+@include fonts('Geometria-LightItalic', 'Geometria/Geometria-LightItalic.otf');

@@ -1,0 +1,33 @@
+@import "../../common/Utils/Utils.scss";
+
+.trader-history {
+  margin-top: 2px;
+  width: 240px;
+  height: 602px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  &__caption {
+    @include font(Lato-Bold);
+    font-size: 12px;
+    color: #000000;
+    margin-left: 10px;
+  }
+  &__list-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 18px 5px 10px;
+    margin-top: 10px;
+    width: 240px;
+    font-size: 12px;
+    background-color: silver;
+  }
+  &__name-list {
+    @include font(Lato-Bold);
+    font-size: 12px;
+    color: #182549;
+  }
+  &__list {
+    overflow-y: auto;
+    height: calc(100% - 55px);
+  }
+}

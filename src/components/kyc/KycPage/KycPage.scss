@@ -1,0 +1,50 @@
+@import "../../common/Utils/Utils.scss";
+
+.kyc-page {
+  display: flex;
+  &__left-block {
+    width: 50%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__logo {
+    margin-top: 50px;
+    width: 138px;
+    height: 40px;
+    background-image: url(../assets/images/cindex-logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__tittle {
+    @include font(Lato-Bold);
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    margin-top: 78px;
+  }
+  &__footer {
+    @include font(Lato-Light);
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #666666;
+    margin-top: 200px;
+  }
+  &__right-block {
+    width: 50%;
+    height: 100vh;
+    background-image: url(../assets/images/kyc-choose-country.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

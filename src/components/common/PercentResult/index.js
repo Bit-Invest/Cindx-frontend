@@ -1,0 +1,1 @@
+export { PercentResult } from './PercentResult';

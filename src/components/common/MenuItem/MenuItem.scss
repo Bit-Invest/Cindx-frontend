@@ -1,0 +1,108 @@
+@import "src/components/common/Utils/Utils.scss";
+
+.menu-item {
+  padding-top: 24px;
+  padding-bottom: 27px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  cursor: pointer;
+
+  &__title {
+    margin-top: 18px;
+    @include font(Geometria-Light);
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    &_terminal {
+      width: 41px;
+      height: 34px;
+      background-image: url('../assets/images/terminal-icon.svg');
+    }
+
+    &_marketplace {
+      width: 41px;
+      height: 41px;
+      background-image: url('../assets/images/marketplace-icon.svg');
+    }
+
+    &_saved {
+      width: 41px;
+      height: 40px;
+      background-image: url('../assets/images/saved-icon.svg');
+    }
+
+    &_billing {
+      width: 35px;
+      height: 41px;
+      background-image: url('../assets/images/billing-icon.svg');
+    }
+
+    &_profile {
+      width: 41px;
+      height: 41px;
+      background-image: url('../assets/images/profile-icon.svg');
+    }
+
+    &_help {
+      width: 43px;
+      height: 44px;
+      background-image: url('../assets/images/help-icon.svg');
+    }
+  }
+}
+
+.menu-item_active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-item_terminal {
+  padding: 24px 0 23px;
+
+  .menu-item__icon {
+    &_terminal {
+      width: 29px;
+      height: 24px;
+    }
+
+    &_marketplace {
+      width: 27px;
+      height: 27px;
+    }
+
+    &_saved {
+      width: 27px;
+      height: 26px;
+    }
+
+    &_billing {
+      width: 24px;
+      height: 29px;
+    }
+
+    &_profile {
+      width: 28px;
+      height: 28px;
+    }
+
+    &_help {
+      width: 30px;
+      height: 31px;
+    }
+  }
+  .menu-item__title {
+    display: none;
+  }
+}

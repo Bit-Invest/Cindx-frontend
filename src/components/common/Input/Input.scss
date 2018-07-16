@@ -1,0 +1,83 @@
+@import "src/components/common/Utils/Utils.scss";
+
+.input {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+
+  &_error {
+    border: solid 2px #ffb3b3;
+  }
+
+  &__input {
+    @include font(Lato);
+    padding-left: 14px;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    font-size: 18px;
+    line-height: normal;
+    outline: none;
+    border: none;
+
+    &::-webkit-input-placeholder {
+      @include font(Lato-Light);
+      color: #666666;
+    }
+
+    &::-moz-placeholder {
+      @include font(Lato-Light);
+      color: #666666;
+    }
+
+    &:-ms-input-placeholder {
+      @include font(Lato-Light);
+      color: #666666;
+    }
+
+    &:-moz-placeholder {
+      @include font(Lato-Light);
+      color: #666666;
+    }
+  }
+
+  &__star {
+    @include font(Lato-Bold);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #ff4040;
+  }
+}
+$terminalPlaceholder: #ccc;
+.input_terminal {
+  border: 1px solid #ddd;
+  font-size: 14px;
+  border-radius: 2px;
+
+  .input__tip {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+  }
+
+  .input__input {
+    &::-webkit-input-placeholder {
+      color: $terminalPlaceholder;
+    }
+
+    &::-moz-placeholder {
+      color: $terminalPlaceholder;
+    }
+
+    &:-ms-input-placeholder {
+      color: $terminalPlaceholder;
+    }
+
+    &:-moz-placeholder {
+      color: $terminalPlaceholder;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: rgba(133, 96, 253, 0.1);
+
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(133, 96, 253, 0.2);
+    border-radius: 100%;
+  }
+
+  &__picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+  }
+}

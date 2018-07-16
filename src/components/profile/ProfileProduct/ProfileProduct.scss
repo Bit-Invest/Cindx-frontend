@@ -1,0 +1,101 @@
+@import "../../common/Utils/Utils.scss";
+
+.profile-product {
+  width: 440px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  margin: 20px 5px 0px;
+  cursor: pointer;
+  text-decoration: none;
+  &__name-product {
+    @include font(Lato-Bold);
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  &__index {
+    @include font(Lato-Light);
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  &__block-currency {
+    display: none;
+    align-items: center;
+  }
+  &__number {
+    @include font(Lato-Light);
+    font-size: 14px;
+    color: #000000;
+  }
+  &__img-currency-btc {
+    background-image: url(../assets/images/Bitcoin_icon.png);
+    background-size: cover;
+    width: 14px;
+    height: 14px;
+    margin-right: 3px;
+  }
+  &__img-currency-usd {
+    background-image: url(../assets/images/Dollar_icon.png);
+    background-size: cover;
+    width: 8px;
+    height: 16px;
+    margin-right: 3px;
+  }
+  &__result-connect {
+    @include font(Lato);
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ff4040;
+
+    &_valid {
+      color: #689f38;
+    }
+  }
+  &__exchange {
+    &_binance {
+      background-image: url(../assets/images/BINANCE_LOGO.png);
+      background-size: cover;
+      width: 80px;
+      height: 16px;
+    }
+    &_poloniex {
+      background-image: url(../assets/images/POLONIEX-LOGO.png);
+      background-size: cover;
+      width: 70px;
+      height: 12px;
+    }
+    &_bittrex {
+      background-image: url(../assets/images/BITTREX_LOGO.png);
+      background-size: cover;
+      width: 70px;
+      height: 16px;
+    }
+    &_kucoin {
+      background-image: url(../assets/images/KUCOIN_LOGO.png);
+      background-size: cover;
+      width: 60px;
+      height: 20px;
+    }
+  }
+}
+.profile-product:hover {
+  background-color: #f1f1f1;
+}

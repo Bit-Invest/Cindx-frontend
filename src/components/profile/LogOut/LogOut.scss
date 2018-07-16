@@ -1,0 +1,29 @@
+@import "../../common/Utils/Utils.scss";
+
+.log-out {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+
+  &__icon {
+    margin-right: 5px;
+    width: 11px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../assets/images/logout_icon.svg);
+  }
+
+  &__title {
+    @include font(Lato-Regular);
+    font-size: 11px;
+    line-height: 1.41;
+    color: #000;
+  }
+
+  &:hover {
+    .log-out__title {
+      color: #ff4040;
+    }
+  }
+}

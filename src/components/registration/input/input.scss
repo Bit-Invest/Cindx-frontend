@@ -1,0 +1,70 @@
+@import "../../common/Utils/Utils.scss";
+
+.inputEmail {
+  width: 280px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 2px #cebffe;
+  @include font(Lato-Light);
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  outline: none;
+  padding-left: 10px;
+  &_input-new-product {
+    width: 560px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 2px #dddddd;
+  }
+}
+.inputEmail:focus {
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.inputEmail:placeholder-shown {
+  border: solid 2px #dddddd;
+}
+.inputEmail__forgot {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  text-decoration: underline;
+  @include font(Lato);
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #8560fd;
+  cursor: pointer;
+}
+.input-reg {
+  margin-top: 20px;
+  position: relative;
+}
+.input-reg_forgot .inputEmail {
+  padding-right: 72px;
+}
+.inputEmail__required {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  @include font(Lato);
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ff4040;
+  cursor: pointer;
+}
+.input-reg_error .inputEmail {
+  border: solid 2px #ff4040;
+}

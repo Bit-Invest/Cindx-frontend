@@ -1,0 +1,23 @@
+@import "../Utils/Utils";
+
+.percent-result {
+  display: inline;
+  @include font(Lato-Bold);
+  line-height: normal;
+}
+
+.percent-result_medium {
+  font-size: 18px;
+}
+
+.percent-result_small {
+  font-size: 12px;
+}
+
+.percent-result_red {
+  color: #ff4040;
+}
+
+.percent-result_green {
+  color: #8bc34a;
+}

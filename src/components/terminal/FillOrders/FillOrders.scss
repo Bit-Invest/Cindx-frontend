@@ -1,0 +1,25 @@
+@import "../../common/Utils/Utils.scss";
+
+.fill-orders{
+    width: auto;
+    height: 262px;
+    background-color: #ffffff;
+    border: solid 1px #f1f1f1;
+  &__list-name {
+    padding:10px 20px;
+    display: flex;
+  }
+  &__name {
+    @include font(Lato-Bold);
+    margin-right: 40px;
+    width: 100px;
+    height: 16px;
+    font-size: 14px;
+    color: #000000;
+  }
+  &__hr {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 1px;
+  }
+}

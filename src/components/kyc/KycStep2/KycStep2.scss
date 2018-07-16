@@ -1,0 +1,88 @@
+@import "../../common/Utils/Utils.scss";
+
+.kyc-step2 {
+  display: flex;
+  flex-direction: column;
+  &__step-block {
+    display: flex;
+    align-items: center;
+  }
+  &__circle-filled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #8560fd;
+    border-radius: 50%;
+    color: #fff;
+  }
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #cebffe;
+    color: #000;
+  }
+  &__border {
+    width: 145px;
+    border-top-style: dotted;
+    color: #cebffe;
+    margin: 0 5px;
+  }
+  &__circle-text-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  &__circle-text-filled {
+    @include font(Lato-Bold);
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  &__circle-text {
+    @include font(Lato-Bold);
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #cccccc;
+  }
+  &__info {
+    width: 440px;
+    height: 40px;
+    @include font(Lato-Light);
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    text-align: center;
+    margin-top: 30px;
+  }
+  &__href {
+    @include font(Lato);
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #8560fd;
+    margin-top: 22px;
+    cursor: pointer;
+  }
+}

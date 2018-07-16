@@ -1,0 +1,84 @@
+@import "../../common/Utils/Utils.scss";
+
+.user-info {
+  display: flex;
+
+  &__info {
+    margin-left: 20px;
+  }
+
+  &__name {
+    @include font(Lato-Bold);
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+
+  &__status-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  &__kyc-status {
+    width: max-content;
+    padding-right: 5px;
+    border-radius: 10px;
+    margin-right: 15px;
+    height: 20px;
+  }
+
+  &__kyc-text {
+    @include font(Lato);
+    margin-top: 1px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+  }
+
+  &__kyc-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    margin-top: -1px;
+  }
+
+  &__kyc-status_active {
+    border: solid 1px rgba(133, 96, 253, 0.5);
+
+    .user-info__kyc-icon {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url(../assets/images/Galochka_purple.svg);
+    }
+
+    .user-info__kyc-text {
+      color: #8560fd;
+    }
+  }
+
+  &__kyc-status_disabled {
+    border: solid 1px #cccccc;
+
+    .user-info__kyc-icon {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url(../assets/images/Galochka_grey.svg);
+    }
+
+    .user-info__kyc-text {
+      color: #cccccc;
+    }
+  }
+}

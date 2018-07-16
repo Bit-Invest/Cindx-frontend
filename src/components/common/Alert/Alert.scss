@@ -1,0 +1,92 @@
+@import "../Utils/Utils.scss";
+
+.alert {
+  margin-bottom: 15px;
+  position: relative;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+
+  &_error {
+    border-bottom: 4px solid #ff4040;
+  }
+
+  &_info {
+    border-bottom: 4px solid #00b2ff;
+  }
+
+  &_attention {
+    border-bottom: 4px solid #ffb300;
+  }
+
+  &_no-icon {
+    border-bottom: 4px solid #999999;
+  }
+
+  &__info {
+    display: flex;
+    padding: 20px 17px 16px 20px;
+  }
+
+  &__description {
+    width: 310px;
+    @include font(Lato-Light);
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &_connect {
+      height: 35px;
+      background-image: url(../assets/images/data_base_icon.svg);
+    }
+
+    &_sign {
+      background-image: url(../assets/images/attention_icon.svg);
+    }
+
+    &_face {
+      background-image: url(../assets/images/wrong_icon.svg);
+    }
+
+    &_lightning {
+      background-size: 55%;
+      background-position: 50%;
+      background-image: url(../assets/images/bolt_icon.svg);
+    }
+
+    &_graph {
+      background-image: url(../assets/images/charts_icon.svg);
+
+    }
+  }
+
+  &__check {
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../assets/images/small-check.svg);
+  }
+
+  &__close {
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -11px;
+    right: -11px;
+    width: 22px;
+    height: 22px;
+    background-color: #ff4040;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,32 @@
+@import "src/components/common/Utils/Utils.scss";
+
+.pop-up-coming-soon {
+  width: 600px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  &__img {
+    margin-top: 80px;
+    width: 124px;
+    height: 120px;
+    background-image: url('../assets/images/ComingSoon.png');
+    background-size: cover;
+  }
+  &__caption {
+    margin-top: 40px;
+    @include font(Lato);
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+  }
+  &__info {
+    margin-top: 15px;
+    @include font(Lato);
+    font-size: 16px;
+    color: #000000;
+  }
+}

@@ -1,0 +1,10 @@
+@mixin fonts($name, $url) {
+  @font-face {
+    font-family: $name;
+    src: url('../assets/fonts/'+$url)  format('truetype');
+  }
+}
+
+@mixin font($font) {
+  font-family: $font, sans-serif;
+}

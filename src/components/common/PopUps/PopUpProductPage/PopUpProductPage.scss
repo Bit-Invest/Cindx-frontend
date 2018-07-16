@@ -1,0 +1,197 @@
+@import "../../../common/Utils/Utils.scss";
+
+.product-page {
+  width: 700px;
+  padding: 30px 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  &__block-exchange {
+    display: flex;
+    align-items: center;
+    margin: 0 30px 30px;
+  }
+  &__exchange {
+    padding-right: 10px;
+    @include font(Lato-Bold);
+    font-size: 16px;
+    color: #000000;
+  }
+  &__currencyPair {
+    @include font(Lato);
+    font-size: 16px;
+    color: #cccccc;
+  }
+  &__head-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 25px;
+  }
+  &__strategy-name {
+    @include font(Lato);
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  &__strategy-date {
+    font-size: 18px;
+    @include font(Lato-Light);
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  &__exchange {
+    @include font(Lato-Light);
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  &__currency {
+    @include font(Lato);
+    font-size: 18px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  &__description-block {
+    padding: 30px;
+  }
+  &__description {
+    @include font(Lato-Light);
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  &__result-block {
+    margin-top: 40px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__result {
+    display: flex;
+    align-items: center;
+  }
+  &__color-result {
+    color: #8bc34a;
+  }
+  &__result-data {
+    @include font(Lato);
+    font-size: 14px;
+    color: #000000;
+    margin-right: 5px;
+  }
+  &__stock-exchange {
+    color: #f3ba2f;
+    @include font(Lato-Bold);
+  }
+  &__saved-block {
+    display: flex;
+    align-items: center;
+  }
+  &__saved {
+    @include font(Lato);
+    font-size: 14px;
+    color: #000000;
+  }
+  &__saved-icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 24px;
+    background-image: url(../assets/images/saved-flag-active.png);
+    background-size: cover;
+  }
+  &__position-container {
+    padding: 0 70px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+  }
+  &__position-block {
+    height: 40px;
+    @include font(Lato);
+    font-size: 12px;
+    color: #666666;
+    display: flex;
+    align-items: center;
+  }
+  &__footer-block {
+    padding: 0 30px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__user-block {
+    display: flex;
+    align-items: center;
+  }
+  &__user-name-block {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  &__rating-block {
+    padding-left: 15px;
+  }
+  &__footer-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    @include font(Lato-Bold);
+    font-size: 18px;
+    color: #ffffff;
+    background: linear-gradient(45deg,#8560fd 15%,#638df7 100%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &_hide {
+      display: none;
+    }
+  }
+  &__disconnect-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    @include font(Lato-Bold);
+    font-size: 18px;
+    background-color: #ff4040;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &_hide {
+      display: none;
+    }
+  }
+  &__footer-button:hover {
+    background-color: #a4a4a4;
+  }
+  &__chart {
+    margin: 0 auto;
+    width: 681px;
+    height: 384px;
+  }
+}

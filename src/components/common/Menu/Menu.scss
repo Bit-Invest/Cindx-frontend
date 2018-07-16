@@ -1,0 +1,41 @@
+.menu {
+  height: 100%;
+  position: fixed;
+  width: 180px;
+
+  &__item-wrap:first-of-type {
+    margin-top: 0;
+  }
+
+  &__item-wrap {
+    a {
+      text-decoration: none;
+    }
+  }
+  &__logo {
+    width: 37px;
+    height: 45px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/Logo_White_solo.svg');
+    mix-blend-mode: overlay;
+    margin: 42px auto 38px;
+  }
+
+  &__items {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #3a2f64, #4a3c6b 47%, #755c7a);
+  }
+}
+
+
+.menu_terminal {
+  width: 73px;
+
+  .menu__logo {
+    width: 36.4px;
+    background-image: url('../assets/images/Logo_White_solo.svg');
+  }
+}

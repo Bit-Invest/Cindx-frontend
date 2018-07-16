@@ -1,0 +1,1 @@
+export { ProfileHead } from './ProfileHead';

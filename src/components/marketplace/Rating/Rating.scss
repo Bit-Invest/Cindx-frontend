@@ -1,0 +1,20 @@
+@import "../../common/Utils/Utils.scss";
+
+.rating {
+  display: flex;
+  align-items: center;
+  &__full-circle {
+    background-image: url(../assets/images/star-active.png);
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+  }
+  &__full-empty {
+    background-image: url(../assets/images/star-deactive.png);
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+  }
+}

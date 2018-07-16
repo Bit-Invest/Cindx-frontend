@@ -1,0 +1,55 @@
+@import "../../../common/Utils/Utils.scss";
+
+.Check-email__RegistrationForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Check-email__RegistrationForm .title {
+  text-align: center;
+  @include font(Lato-Bold);
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.success {
+  width: 180px;
+  @include font(Lato-Light);
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: center;
+}
+.Check-email__RegistrationForm .success-img {
+  width: 80px;
+  height: 80px;
+  background-image: url(../assets/images/success.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 30px 0 20px;
+}
+.Check-email__RegistrationForm .transitionAccount {
+  @include font(Lato);
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #8560fd;
+  margin-top: 20px;
+}
+.Check-email__RegistrationForm .transitionAccount span {
+  color: #8560fd;
+  text-decoration: underline;
+  cursor: pointer;
+}

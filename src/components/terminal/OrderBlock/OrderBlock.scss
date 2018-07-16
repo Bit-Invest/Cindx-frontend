@@ -1,0 +1,62 @@
+@import "../../common/Utils/Utils.scss";
+
+.order-block {
+  margin-top: 5px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 10px 10px 19px 11px;
+  &__order-types {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__order-type {
+    cursor: pointer;
+    width: 108px;
+    height: 28px;
+    border-radius: 2px;
+    @include font(Lato);
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    background-color: #cccccc;
+  }
+
+  &__order-buttons {
+    display: flex;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  &__order-button {
+    width: 220px;
+    height: 28px;
+    background-color: rgba(133, 96, 253, 0.4);
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    @include font(Lato-Bold);
+    line-height: 28px;
+    text-align: center;
+
+    &_active {
+      background-color: #8560fd;
+    }
+  }
+
+  &__form-wrap {
+    margin-top: 10px;
+  }
+}
+
+.order-block__order-type_sell.order-block__order-type_active {
+  background-color: #ff4040;
+}
+.order-block__order-type_buy.order-block__order-type_active {
+  background-color: #8bc34a;
+
+}

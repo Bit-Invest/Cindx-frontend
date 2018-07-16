@@ -1,0 +1,40 @@
+@import "../../common/Utils/Utils.scss";
+
+.unit {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  %text {
+    font-size: 18px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  &__title {
+    @include font(Lato-Light);
+    color: #000000;
+  }
+
+  &__unit {
+    @include font(Lato-Bold);
+
+    &_green {
+      color: #8bc34a;
+    }
+
+    &_red {
+      color: #ff4040;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .unit {
+    width: 120px;
+  }
+}

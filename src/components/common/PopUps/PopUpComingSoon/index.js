@@ -1,0 +1,1 @@
+export { PopUpComingSoon } from './PopUpComingSoon';

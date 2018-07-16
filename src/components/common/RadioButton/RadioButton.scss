@@ -1,0 +1,45 @@
+@import "../Utils/Utils";
+
+.radio-button {
+  display: flex;
+  cursor: pointer;
+  width: max-content;
+  align-items: center;
+  margin-right: 20px;
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: solid 2px #cebffe;
+  }
+
+  &__fill {
+    display: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #8560fd;
+  }
+
+  &__title {
+    margin-left: 10px;
+    @include font(Lato);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+}
+
+.radio-button_active {
+  .radio-button__fill {
+    display: block;
+  }
+}

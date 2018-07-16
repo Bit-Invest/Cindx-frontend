@@ -1,0 +1,21 @@
+.terminal-head {
+  width: 100%;
+  height: 30px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: flex;
+
+  &__stock-select {
+    width: 125px;
+  }
+
+  &__pair-select {
+    width: 131px;
+  }
+
+  &__type-select {
+    width: 94px;
+  }
+}

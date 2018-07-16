@@ -1,0 +1,86 @@
+@import "../../common/Utils/Utils.scss";
+
+.select {
+  position: relative;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+
+  &__sign-up {
+    width: 280px;
+    border-radius: 5px;
+    border: solid 2px #dddddd;
+    @include font(Lato);
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    outline: none;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+  &_new-product {
+    width: 560px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 2px #dddddd;
+  }
+
+  &__options {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+    max-height: 200px;
+    z-index: 1;
+
+    &_closed {
+      display: none;
+    }
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+
+  }
+
+  &__currentValue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 100%;
+    line-height: 40px;
+  }
+
+  &__option {
+    padding-left: 14px;
+    height: 40px;
+    line-height: 40px;
+    &:hover {
+      background-color: #ebe5ff;
+    }
+  }
+
+  &_terminal {
+    width: 200px;
+    height: 30px;
+  }
+
+  &__arrow {
+    width: 8px;
+    height: 7.1px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/arrow-select.svg)
+  }
+}
+
+.select_terminal {
+  width: 100%;
+  @include font(Lato-Bold);
+  font-size: 12px;
+  box-shadow: none;
+  border-right: 1px solid #ddd;
+}

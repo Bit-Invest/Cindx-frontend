@@ -1,0 +1,11 @@
+@import "../../common/Utils/Utils.scss";
+
+.profile-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 30px 30px 25px;
+
+  &__units {
+    display: flex;
+  }
+}

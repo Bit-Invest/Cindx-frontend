@@ -1,0 +1,164 @@
+@import "../Utils/Utils.scss";
+
+.button {
+  width: 90px;
+  height: 30px;
+  outline: none;
+  color: #8560fd;
+  cursor: pointer;
+  font-size: 14px;
+  @include font(Lato-Bold);
+  font-weight: bold;
+  border-radius: 5px;
+  font-style: normal;
+  line-height: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  border: 2px solid #8560fd;
+  &_theme-gradient {
+    border: none;
+    color: #ffffff;
+    background: linear-gradient(45deg,
+      rgba(133, 96, 253, 1) 15%,
+      rgba(99, 141, 247, 1) 100%
+    );
+  }
+  &_theme-gradient-popUp {
+    width: 260px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    background: linear-gradient(45deg,
+      rgba(133, 96, 253, 1) 15%,
+      rgba(99, 141, 247, 1) 100%
+    );
+    @include font(Lato);
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  &_signUp {
+    display: flex;
+    padding: 0 14px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    color: #ffffff;
+    background: linear-gradient(
+      45deg,
+      rgba(133, 96, 253, 1) 15%,
+      rgba(99, 141, 247, 1) 100%
+    );
+  }
+  &_gradient-img {
+    display: flex;
+    padding: 0 14px;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    @include font(Lato-Bold);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #ffffff;
+    background: linear-gradient(
+      45deg,
+      rgba(133, 96, 253, 1) 15%,
+      rgba(99, 141, 247, 1) 100%
+    );
+  }
+  &_buy-button-terminal-form {
+    margin-top: 10px;
+    margin-left: 31px;
+    width: 428px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #638ef7;
+    @include font(Lato-Bold);
+    font-size: 12px;
+    color: #ffffff;
+    border: none;
+  }
+  &_sell-button-terminal-form {
+    margin-top: 10px;
+    margin-left: 31px;
+    width: 428px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ff4040;
+    @include font(Lato-Bold);
+    font-size: 12px;
+    color: #ffffff;
+    border: none;
+  }
+  &__btn-title {
+    flex-grow: 2;
+  }
+  &__btn-img {
+    background-image: url(../assets/images/preloaderBtn.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    // display: none;
+  }
+  &_product-btn {
+    width: 147px;
+    height: 40px;
+    @include font(Lato-Bold);
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    background: linear-gradient(45deg,
+      rgba(133, 96, 253, 1) 15%,
+      rgba(99, 141, 247, 1) 100%
+    );
+    border: none;
+  }
+  &_pop-up-new-product {
+    margin-top: 35px;
+    width: 560px;
+    height: 40px;
+    color: #ffffff;
+    border: none;
+    @include font(Lato-Bold);
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    background: linear-gradient(45deg,
+      rgba(133, 96, 253, 1) 15%,
+      rgba(99, 141, 247, 1) 100%
+    );
+  }
+}
+.button:hover {
+  background: rgba(133, 96, 253, 1);
+  color: white;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+.button:active {
+  background: #638df7;
+}
+
+.button_terminal {
+  
+}
